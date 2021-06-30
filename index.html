@@ -28,7 +28,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXH39QG"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
+<script type="text/javascript">
+function onClickOULSame() {
+                let value = document.getElementById("constantOUL").value;
+                clevertap.onUserLogin.push({
+                    Site: {
+                        // Email: `${Math.ceil(Math.random() * 100012)}@gmail.com`
+                        Email: `${value}@gmail.com`
+                    }
+                });
+                getLS();
+            }
+  </script>
 <link rel="stylesheet" href="animate.css">
   <p>On User Login</p>
         <input type="text" id="constantOUL" class="textInput" /><input
